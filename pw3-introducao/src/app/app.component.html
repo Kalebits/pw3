@@ -1,6 +1,11 @@
-<h1>
 
-  Olá, {{nomeCompleto()}}! Você tem {{idade}} anos.
-  <img src={{logo}}>
 
-</h1>
+  <img src={{biscoito}}>
+  <br>
+  <button (click)="quebrarBiscoito()" [disabled] = "desabilitarB" (click)="sorteio()">Quebrar biscoito</button>
+  <p [hidden] = "ocultar">
+    {{frases}}
+  </p>
+
+
+
