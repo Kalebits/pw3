@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-personagem',
@@ -7,9 +7,11 @@ import { Component } from '@angular/core';
 })
 export class PersonagemComponent {
 
-  constructor(){}
+  constructor() { }
 
-  nome: string  = 'Luke';
+  @Input() nome: string = '';
+  @Input() varinha: string = '';
+  @Input() ehBruxo: boolean = true;
 
 
 }
