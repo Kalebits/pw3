@@ -12,6 +12,6 @@ export class PersonagemComponent {
   @Input() nome: string = '';
   @Input() varinha: string = '';
   @Input() ehBruxo: boolean = true;
-
+  @Input() nivel : number = 0;
 
 }

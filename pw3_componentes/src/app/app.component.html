@@ -1,4 +1,4 @@
 <app-header></app-header>
-<app-personagem nome = 'Harry Potter' varinha = 'Pena de Fenix'></app-personagem>
-<app-personagem nome = 'Hermione Granger' varinha = 'Videira'></app-personagem>
-<app-personagem nome = 'Albus Dumbledore' [ehBruxo] = 'false' ></app-personagem>
+<app-personagem *ngFor="let e of personagens"
+                [nome]="e.nome" [varinha]="e.varinha"
+                [ehBruxo]="e.ehBruxo" [nivel]="e.nivel"></app-personagem>
