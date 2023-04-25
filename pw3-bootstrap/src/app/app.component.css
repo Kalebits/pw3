@@ -1,0 +1,13 @@
+#navbarSupportedContent {
+  background-color: #fff;
+  width: 320px;
+  height: 100vh;
+  z-index: 5;
+  left: 0;
+  top: 0;
+  margin-top: 67px;
+  padding-left: 10px;
+  padding-top: 5px;
+  position: fixed;
+  cursor: pointer;
+}
