@@ -9,17 +9,17 @@
 
     <div class="form-group">
       <label>Usuário</label>
-      <input type="text" class="form-control" formControlName="usuario" />
+      <input type="text" class="form-control" maxlength="15" minlength="3" formControlName="usuario" />
     </div>
 
     <div class="form-group">
       <label>E-mail</label>
-      <input type="email" class="form-control" formControlName="email"/>
+      <input type="email" class="form-control" pattern="*@*.*" minlength="5" formControlName="email"/>
     </div>
 
     <div class="form-group">
       <label>Senha</label>
-      <input class="form-control" formControlName="senha"/>
+      <input class="form-control" maxlength="12" minlength="8" formControlName="senha"/>
     </div>
 
     <div class="form-group">
@@ -33,7 +33,7 @@
     </div>
 
     <div class="form-group">
-      <button type="submit" class="btn btn-primary">Registrar</button>
+      <button type="submit" class="btn btn-primary" [disabled]="cadastroForm.invalid">Registrar</button>
       <button type="button" class="btn btn-warning float-right">Limpar</button>
     </div>
 
