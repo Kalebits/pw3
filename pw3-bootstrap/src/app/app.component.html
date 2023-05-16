@@ -1,59 +1,83 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Desenhos</title>
-  </head>
-  <body>
-    <div>
-      <nav class="navbar navbar-light">
-        <a class="navbar-brand" href="#">Header</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+<nav class="navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto align-items-end">
-            <li class="nav-item active">
-              <a class="nav-link" href="#"
-                >Home <span class="sr-only">(current)</span></a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contato</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled">Sobre</a>
-            </li>
-          </ul>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
         </div>
-      </nav>
-    </div>
-    <div class="row">
-      <div class="col-12">Desenhos</div>
-      <div class="row">
-        <div>
-          <ul>
-            <li><img src="img/DOKI.jpg" alt=""></li>
-            <li><img src="img/Coragem.jpg" alt=""></li>
-            <li><img src="img/HoradeAventura.jpg" alt=""></li>
-            <li><img src="img/historietas.jpg" alt=""></li>
-            <li><img src="img/pocoyo.jpg" alt=""></li>
-            <li><img src="img/mansaofoster.jpg" alt=""></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <footer></footer>
-  </body>
-</html>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+<div class="row desenhos">
+<div class="col-2" style="width: 18rem;">
+  <img class="card-img-top desenhosimg" src="../assets/img/DOKI.jpg" alt="Doki">
+  <div class="card-body">
+    <p class="card-text">Doki é uma série de televisão original do Discovery Kids. Teve dois pilotos lançado em 23 de dezembro de 2009
+       e a série estreou no mesmo canal na América Latina em 22 de abril de 2013.
+       A série tem como protagonistas: Doki e o resto de seus novos amigos.</p>
+  </div>
+</div>
+<div class="col-2" style="width: 18rem;">
+  <img class="card-img-top desenhosimg" src="../assets/img/historietas.jpg" alt="Historietas Assombradas">
+  <div class="card-body">
+    <p class="card-text">A história de um menino de 11 anos chamado Pepe, que ajuda sua avó fazendo entregas de artefatos e poções mágicas pela internet.</p>
+  </div>
+</div>
+<div class="col-2" style="width: 18rem;">
+  <img class="card-img-top desenhosimg" src="../assets/img/HoradeAventura.jpg" alt="Hora de Aventura">
+  <div class="card-body">
+    <p class="card-text">Finn vive grandes aventuras na terra de Ooo na companhia de seu melhor
+       amigo, Jake. De viagens a reinos alucinantes a lutas contra vampiros, os dois estão prontos para enfrentar qualquer perigo.</p>
+  </div>
+</div>
+<div class="col-2" style="width: 18rem;">
+  <img class="card-img-top desenhosimg" src="../assets/img/mansaofoster.jpg" alt="Mansao Foster">
+  <div class="card-body">
+    <p class="card-text">Mac tem oito anos de idade e, a pedido de sua mãe, é obrigado a
+      abandonar seu amigo imaginário Bloo, que acaba indo viver na Mansão Foster com outros amiguinhos, frutos da imaginação das crianças.</p>
+  </div>
+</div>
+<div class="col-2" style="width: 18rem;">
+  <img class="card-img-top desenhosimg" src="../assets/img/pocoyo.jpg" alt="Pocoyo">
+  <div class="card-body">
+    <p class="card-text">Conheça o menino Pocoyo, curioso e engraçado, que adora brincar e explorar o mundo ao seu redor.</p>
+  </div>
+</div>
+<div class="col-2" style="width: 18rem;">
+  <img class="card-img-top desenhosimg" src="../assets/img/Coragem.jpg" alt="Coragem o Cão covarde">
+  <div class="card-body">
+    <p class="card-text">Coragem é um cachorro que vive em uma fazenda distante onde acontecem aparições de monstros, fantasmas
+       e outras criaturas. O animal está sempre defendendo e salvando seus donos idosos de eventos misteriosos.</p>
+  </div>
+</div>
+</div>
+
+<br><br><br><br><br><br><br>
+<footer class="bg-dark text-white text-center py-4 mb-0">
+  <p>&copy; 2023 My Website. All rights reserved.</p>
+</footer>

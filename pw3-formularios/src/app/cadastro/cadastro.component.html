@@ -5,7 +5,8 @@
     <div class="form-group">
       <label>Nome</label>
       <input type="text" class="form-control" formControlName="nome" />
-    </div>
+      <div *ngIf="cadastroForm.get('nome')?.errors?.['required'] && cadastroForm.get('nome')?.touched">Nome obrigatorio</div>
+    </div >
 
     <div class="form-group">
       <label>Usuário</label>
@@ -19,7 +20,7 @@
 
     <div class="form-group">
       <label>Senha</label>
-      <input class="form-control" maxlength="12" minlength="8" formControlName="senha"/>
+      <input type="password" class="form-control" maxlength="12" minlength="8" formControlName="senha"/>
     </div>
 
     <div class="form-group">
@@ -35,6 +36,7 @@
     <div class="form-group">
       <button type="submit" class="btn btn-primary" [disabled]="cadastroForm.invalid">Registrar</button>
       <button type="button" class="btn btn-warning float-right">Limpar</button>
+      <div *ngIf="cadastroForm.get('confirmarsenha')?.value !== cadastroForm.get('senha')?.value && cadastroForm.get('confirmarsenha')?.touched">As senhas não correspondem.</div>
     </div>
 
   </form>

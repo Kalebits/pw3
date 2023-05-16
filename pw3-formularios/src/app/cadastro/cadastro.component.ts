@@ -11,7 +11,7 @@ export class CadastroComponent {
 
   constructor(private builder: FormBuilder) {
     this.cadastroForm = builder.group({
-      nome: [''],
+      nome: ['', Validators.required],
       usuario: ['', Validators.required],
       email: ['', Validators.required],
       senha: ['', Validators.required],
