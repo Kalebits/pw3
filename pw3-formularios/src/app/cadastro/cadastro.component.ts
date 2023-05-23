@@ -15,7 +15,7 @@ export class CadastroComponent {
       usuario: ['', Validators.required],
       email: ['', Validators.required],
       senha: ['', Validators.required],
-      confirmarsenha: [''],
+      confirmarsenha: ['', Validators.required],
       aceite: [false, [Validators.requiredTrue]],
     });
   }

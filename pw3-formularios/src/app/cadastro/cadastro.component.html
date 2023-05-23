@@ -25,7 +25,8 @@
 
     <div class="form-group">
       <label>Confirmar senha</label>
-      <input type="password" class="form-control" formControlName="confirmarsenha"/>
+      <input type="password" class="form-control" maxlength="12" minlength="8" formControlName="confirmarsenha"/>
+
     </div>
 
     <div class="form-group form-check">
@@ -34,11 +35,11 @@
     </div>
 
     <div class="form-group">
-      <button type="submit" class="btn btn-primary" [disabled]="cadastroForm.invalid">Registrar</button>
-      <button type="button" class="btn btn-warning float-right">Limpar</button>
-      <div *ngIf="cadastroForm.get('confirmarsenha')?.value !== cadastroForm.get('senha')?.value && cadastroForm.get('confirmarsenha')?.touched">As senhas não correspondem.</div>
+      <div *ngIf="formControlName.senha !== formControlName.confirmarsenha" >
+        <button type="submit" class="btn btn-primary" [disabled]="cadastroForm.invalid || formControlName.senha !== formControlName.confirmarsenha">Registrar</button>
+        <button type="button" class="btn btn-warning float-right">Limpar</button>
+      </div>
     </div>
-
   </form>
 
 </div>
